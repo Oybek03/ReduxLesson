@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import selectSong from "../actions";
+import { selectSongAction } from "../actions";
 const SongList = (props) => {
   console.log(props);
   return props.songListReducer.map((val) => {
@@ -21,7 +21,7 @@ const SongList = (props) => {
               <div className="ui two buttons">
                 <div
                   onClick={() => {
-                    props.selectSong(val);
+                    props.selectSongAction(val);
                   }}
                   className="ui basic green button"
                 >
@@ -40,5 +40,5 @@ const getMyState = (data) => {
   return data;
 };
 export default connect(getMyState, {
-  selectSong,
+  selectSongAction,
 })(SongList);

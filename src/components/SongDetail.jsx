@@ -28,7 +28,7 @@ class SongDetail extends React.Component {
         </div>
       );
     } else {
-      return <div>Loading...</div>;
+      return <div>No results...</div>;
     }
   }
   render() {

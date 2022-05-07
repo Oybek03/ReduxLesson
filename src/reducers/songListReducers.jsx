@@ -1,21 +1,17 @@
-const songListReducer = (history = [], song) => {
-  return [
+const songListReducer = (
+  history = [
     {
       name: "Uzbek",
       time: "3:55",
       author: "uzim",
     },
-    {
-      name: "russian",
-      time: "3:57",
-      author: "boshqa",
-    },
-    {
-      name: "kazak",
-      time: "3:15",
-      author: "babay",
-    },
-  ];
+  ],
+  song
+) => {
+  if (song.type === "ADD") {
+    return (history = [...history, song.payload]);
+  }
+  return history;
 };
 
 export default songListReducer;

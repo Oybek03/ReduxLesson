@@ -1,4 +1,10 @@
-const selectSongAction = (data) => {
+export const selectSongAction = (data) => {
   return { type: "SELECTED", payload: data };
 };
-export default selectSongAction;
+
+export const addSongAction = (data) => {
+  return {
+    type: "ADD",
+    payload: data,
+  };
+};
