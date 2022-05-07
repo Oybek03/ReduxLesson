@@ -1,9 +1,19 @@
 import React from "react";
 import Redux from "redux";
-
+import SongList from "./SongList";
+import SongDetail from "./SongDetail";
 const App = (props) => {
   console.log(props);
-  return <h1>props</h1>;
+  return (
+    <div className="ui grid container">
+      <div className="eight wide column">
+        <SongList />
+      </div>
+      <div className="eight wide column">
+        <SongDetail />
+      </div>
+    </div>
+  );
 };
 
 export default App;

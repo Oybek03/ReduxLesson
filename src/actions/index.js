@@ -1,4 +1,4 @@
-const selectSong = (obj) => {
-  return { type: "SELECTED", payload: obj };
+const selectSongAction = (data) => {
+  return { type: "SELECTED", payload: data };
 };
-export default selectSong;
+export default selectSongAction;
