@@ -10,7 +10,6 @@ const App = () => {
     <div className="App">
       <Forma />
       <Card />
-      {/* <CardList /> */}
     </div>
   );
 };

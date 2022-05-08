@@ -7,6 +7,24 @@
   margin-top: 20px;
   outline: none;
 }
-.card {
+textarea {
+  resize: none;
+  border-radius: 10px;
+  background: none;
+  background-color: rgba(128, 128, 0, 0.327);
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 200px;
+}
+.cards {
+  width: 100vw;
+margin-top: 20px;
   display: flex;
+  gap: 20px;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }

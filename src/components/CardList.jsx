@@ -6,30 +6,19 @@ function CardList(props) {
   const [btnValue, setBtnValue] = useState(true);
   let sana = new Date();
   return (
-    <div>
+    <div className="list">
       {props.addReducers.map((val) => {
         return (
           <div key={val.id} className="card">
-            <textarea
-              defaultValue={val.value}
-              readOnly={btnValue}
-              cols="30"
-              rows="10"
-              className="card--input-2"
-            ></textarea>
+            <textarea defaultValue={val.value} readOnly={btnValue}></textarea>
             <div className="card--footer">
               <p className="card--limit">
                 {sana.getDate()} /{sana.getMonth() + 1}/{sana.getFullYear()} yil
+                <br />
+                {sana.getHours()}: {sana.getMinutes()}
               </p>
 
-              <button
-                onClick={() => {
-                  document.querySelector(".card--input-2").value = "";
-                }}
-                className="card--delete-btn"
-              >
-                Delete
-              </button>
+              <button className="ui button red">Delete</button>
             </div>
           </div>
         );

@@ -13,20 +13,17 @@ function Card(props) {
       <div className="cards">
         <div className="card">
           <textarea
+            placeholder="writeng...."
             onChange={handleChange}
-            cols="30"
-            rows="10"
-            className="card--input-2"
           ></textarea>
           <div className="card--footer">
             <p className="card--limit">{300 - value.length}</p>
             <button
               onClick={() => {
-                let id = Date.now();
-                props.newCardAction({ value, id });
+                props.newCardAction({ value });
                 document.querySelector(".card--input-2").value = "";
               }}
-              className="card--delete-btn"
+              className="ui button green"
             >
               Save
             </button>
