@@ -23,7 +23,7 @@ function Card(props) {
             <button
               onClick={() => {
                 let id = Date.now();
-                props.addCardAction({ value, id });
+                props.newCardAction({ value, id });
                 document.querySelector(".card--input-2").value = "";
               }}
               className="card--delete-btn"
@@ -37,7 +37,10 @@ function Card(props) {
     </div>
   );
 }
-const getMyState = (state) => state;
+const getMyState = (state) => {
+  return state;
+};
+
 export default connect(getMyState, {
   newCardAction,
 })(Card);

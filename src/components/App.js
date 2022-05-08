@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Redux from "redux";
 import Card from "./Card";
 import Forma from "./Forma";
-
+import CardList from "./CardList";
 const App = () => {
   const [show, setShow] = useState(false);
 
@@ -10,6 +10,7 @@ const App = () => {
     <div className="App">
       <Forma />
       <Card />
+      {/* <CardList /> */}
     </div>
   );
 };
