@@ -1,33 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Redux from "redux";
-import SongList from "./SongList";
-import SongDetail from "./SongDetail";
-import Header from "./Header";
-import AddSong from "./AddSong";
-const App = (props) => {
+import Card from "./Card";
+import Forma from "./Forma";
+
+const App = () => {
   const [show, setShow] = useState(false);
 
-  console.log(props);
   return (
-    <div className=" ui container">
-      <div>{show ? <AddSong /> : ""}</div>
-
-      <Header />
-      <button onClick={() => setShow(!show)} className="ui button green">
-        ADD
-      </button>
-      <div className="ui grid container">
-        <div className="eight wide column">
-          <SongList />
-        </div>
-        <div className="eight wide column">
-          <SongDetail />
-        </div>
-      </div>
+    <div className="App">
+      <Forma />
+      <Card />
     </div>
   );
 };
-
 export default App;
 
 //////////////////////////////////////////////////////////

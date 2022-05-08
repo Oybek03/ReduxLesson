@@ -1,10 +1,10 @@
-export const selectSongAction = (data) => {
-  return { type: "SELECTED", payload: data };
+export const newCardAction = (data) => {
+  return { type: "ADD", payload: data };
 };
 
-export const addSongAction = (data) => {
+export const deleteCardAction = (data) => {
   return {
-    type: "ADD",
+    type: "DEL",
     payload: data,
   };
 };

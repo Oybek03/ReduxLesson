@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-import selectSongReducer from "./selectSongReducers";
-import songListReducer from "./songListReducers";
+import addReducers from "./addReducers";
+import deleteReducers from "./deleteReducers";
 
 const allReducers = combineReducers({
-  selectSongReducer,
-  songListReducer,
+  addReducers,
+  deleteReducers,
 });
 export default allReducers;
