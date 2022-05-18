@@ -1,0 +1,14 @@
+.Block {
+  width: 150px;
+  height: 150px;
+  border: 5px solid black;
+  background-size: cover;
+  display: inline-block;
+}
+
+.mark1 {
+  background-image: url(https://e7.pngegg.com/pngimages/482/392/png-clipart-black-x-mark-tic-tac-toe-oxo-holiday-tic-tac-toe-game-blue-cross-miscellaneous-angle.png);
+}
+.mark2 {
+  background-image: url(https://www.clipartmax.com/png/small/440-4408148_transparent-o-tic-tac-toe-o.png);
+}
