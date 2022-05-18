@@ -4,11 +4,19 @@
   border: 5px solid black;
   background-size: cover;
   display: inline-block;
+  transition: all 0.5s ease-in-out;
 }
+.Block:hover {
+  transform: scale(1.01);
+  background-color: rgba(0, 0, 0, 0.234);
+}
+.Board {
+  margin-left: 450px;
 
-.mark1 {
-  background-image: url(https://e7.pngegg.com/pngimages/482/392/png-clipart-black-x-mark-tic-tac-toe-oxo-holiday-tic-tac-toe-game-blue-cross-miscellaneous-angle.png);
 }
 .mark2 {
+  background-image: url(https://e7.pngegg.com/pngimages/482/392/png-clipart-black-x-mark-tic-tac-toe-oxo-holiday-tic-tac-toe-game-blue-cross-miscellaneous-angle.png);
+}
+.mark1 {
   background-image: url(https://www.clipartmax.com/png/small/440-4408148_transparent-o-tic-tac-toe-o.png);
 }
